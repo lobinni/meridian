@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "by": "operator",
+    "path": "Quarterly report. The committee reviewed the repository, the deployment records and the monitoring dashboards referenced below in full.  We are enrolled to begin the alpha audit in October and the beta testnet launch is scheduled for next quarter.",
+    "expect": "0|0|0|0 - void. It NAMES alpha and beta and demonstrates neither: enrollment is not a published audit, and a schedule is not a live testnet. This is the failure mode the contract exists to refuse."
+  },
+  {
+    "id": 1,
+    "by": "operator",
+    "path": "Quarterly report. The committee reviewed the repository, the deployment records and the monitoring dashboards referenced below in full.  Milestone evidence: proven(alpha). Milestone evidence: proven(beta). Milestone evidence: proven(gamma).",
+    "expect": "1|1|1|0 - three conditions stand, the gate attains its bar of 3. (In samples/demo.py the offline keyword model reads proven(<word>) markers; on a live network the model reads the prose itself.)"
+  },
+  {
+    "id": 2,
+    "by": "keeper",
+    "path": "Quarterly report. The committee reviewed the repository, the deployment records and the monitoring dashboards referenced below in full.  Milestone evidence: proven(beta). Milestone evidence: proven(delta).",
+    "expect": "0|1|0|1 - filed after filing 1 is struck, rebuilding the standing."
+  },
+  {
+    "id": 3,
+    "by": "keeper",
+    "path": "Quarterly report. The committee reviewed the repository, the deployment records and the monitoring dashboards referenced below in full.  Milestone evidence: proven(gamma).",
+    "expect": "0|0|1|0 - the union is now 0|1|1|1: the gate attains again, on a different three conditions than before the strike."
+  }
+]

@@ -1,0 +1,13 @@
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# node / vite
+node_modules/
+dist/
+
+# submission bundle output
+submission/

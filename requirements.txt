@@ -1,0 +1,5 @@
+# Everything the offline suites need.
+pytest>=8.0
+
+# Opt-in, for tests/test_integration.py against a live network only:
+# genlayer-test>=0.1.0

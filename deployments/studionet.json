@@ -1,0 +1,15 @@
+{
+  "network": "studionet",
+  "address": "0x947D2D00Dbc6738581C16309bc77F81AB0288Fd0",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x947D2D00Dbc6738581C16309bc77F81AB0288Fd0",
+  "source": "contracts/meridian.py",
+  "runner_pin": "py-genlayer:test",
+  "constructor_args": [],
+  "deployed": "2026-09",
+  "verify": "python scripts/verify_deployment.py 0x947D2D00Dbc6738581C16309bc77F81AB0288Fd0",
+  "notes": [
+    "Deployed via GenLayer Studio run-debug after `pytest tests/test_schema.py -q` and the full offline suite.",
+    "The deployment artifact is one file: contracts/meridian.py. Verify the on-chain source against it byte-for-byte before trusting any read you gate on.",
+    "Read-only smoke test against this address: GENLAYER_STUDIO=1 MERIDIAN_ADDRESS=0x947D2D00Dbc6738581C16309bc77F81AB0288Fd0 gltest --network studionet tests/test_integration.py"
+  ]
+}

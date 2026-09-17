@@ -1,0 +1,12 @@
+{
+  "title": "Tranche Two",
+  "operator": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "bar": 3,
+  "clauses": [
+    "alpha audit report published with zero critical findings",
+    "beta testnet live with five hundred weekly users",
+    "gamma documentation covering every public endpoint",
+    "delta mainnet deployed and verified on the explorer"
+  ],
+  "note": "Pipe-join clauses for the `clauses` argument of open_gate(), in this exact order. The order is frozen the moment the gate opens, and every mask forever after reads in this order."
+}
